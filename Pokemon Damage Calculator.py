@@ -1,3 +1,5 @@
+import random
+
 print("Pokemon Damage Calculator ni JOSE\n")
 
 lvl = 90
@@ -9,12 +11,12 @@ target = 1
 weather = 1
 badge = 1
 crit = 1
-random = 1
+randomdaw = random.uniform(0.85,1)
 stab = 1.5
 type = 0.5
 burn = 1
 
-modifier = target*weather*badge*crit*random*stab*type*burn
+modifier = target*weather*badge*crit*randomdaw*stab*type*burn
 dmg = round(((((((2*lvl)/5)+2)*(pwr*(atk/defs)))/50)+2)*modifier)
 
 print("Charizard Lv.90 uses Fire Blast on Feraligatr lv.95")
